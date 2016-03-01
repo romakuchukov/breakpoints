@@ -1,1 +1,1 @@
-# breakpoints
+# Foundation style breakpoints
