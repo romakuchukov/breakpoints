@@ -1,0 +1,27 @@
+// Width variables for media queries
+$micro-width: 480px;
+$tiny-width: 568px;
+$small-width: 768px;
+$medium-width: 970px;
+$large-width: 1280px;
+
+// Max width goes form "width" which is defined this way <-------
+// If you are resizing the right corner
+$micro-down:   "(max-width: #{$micro-width - 1})";
+$tiny-down:   "(max-width: #{$tiny-width - 1})";
+$small-down:  "(max-width: #{$small-width - 1})";
+$medium-down: "(max-width: #{$medium-width - 1})";
+$large-down:  "(max-width: #{$large-width - 1})";
+
+// Min width goes form "width" which is defined that way ------->
+// If you are resizing the right corner
+$micro-up:   "(min-width: #{$micro-width})";
+$tiny-up:   "(min-width: #{$tiny-width})";
+$small-up:  "(min-width: #{$small-width})";
+$medium-up: "(min-width: #{$medium-width})";
+$large-up:  "(min-width: #{$large-width})";
+
+// Ranges ------->   <-------
+$small-to-medium: "#{$medium-down} and #{$small-up}";
+$medium-to-large: "#{$large-down} and #{$medium-up}";
+$small-to-large:  "#{$large-down} and #{$small-up}";
