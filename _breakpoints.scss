@@ -1,27 +1,49 @@
 // Width variables for media queries
-$micro-width: 480px;
-$tiny-width: 568px;
-$small-width: 768px;
-$medium-width: 970px;
-$large-width: 1280px;
-
-// Max width goes form "width" which is defined this way <-------
-// If you are resizing the right corner
-$micro-down:   "(max-width: #{$micro-width - 1})";
-$tiny-down:   "(max-width: #{$tiny-width - 1})";
-$small-down:  "(max-width: #{$small-width - 1})";
-$medium-down: "(max-width: #{$medium-width - 1})";
-$large-down:  "(max-width: #{$large-width - 1})";
+$mo: 350px;     //micro
+$xs: 450px;     //extra-small
+$sm: 600px;     //small
+$md: 960px;     //medium
+$lg: 1300px;    //large
+$xl: 1920px;    //extra-large
 
 // Min width goes form "width" which is defined that way ------->
 // If you are resizing the right corner
-$micro-up:   "(min-width: #{$micro-width})";
-$tiny-up:   "(min-width: #{$tiny-width})";
-$small-up:  "(min-width: #{$small-width})";
-$medium-up: "(min-width: #{$medium-width})";
-$large-up:  "(min-width: #{$large-width})";
+$mo-up: "(min-width: #{$mo})";
+$xs-up: "(min-width: #{$xs})";
+$sm-up: "(min-width: #{$sm})";
+$md-up: "(min-width: #{$md})";
+$lg-up: "(min-width: #{$lg})";
+$xl-up: "(min-width: #{$xl})";
+
+// Max width goes form "width" which is defined this way <-------
+// If you are resizing the right corner
+$mo-down: "(max-width: #{$mo - 1})";
+$xs-down: "(max-width: #{$xs - 1})";
+$sm-down: "(max-width: #{$sm - 1})";
+$md-down: "(max-width: #{$md - 1})";
+$lg-down: "(max-width: #{$lg - 1})";
+$xl-down: "(max-width: #{$xl - 1})";
 
 // Ranges ------->   <-------
-$small-to-medium: "#{$medium-down} and #{$small-up}";
-$medium-to-large: "#{$large-down} and #{$medium-up}";
-$small-to-large:  "#{$large-down} and #{$small-up}";
+$mo-to-xs: "#{$xs-down} and #{$mo-up}";
+$mo-to-sm: "#{$sm-down} and #{$mo-up}";
+$mo-to-md: "#{$md-down} and #{$mo-up}";
+$mo-to-lg: "#{$lg-down} and #{$mo-up}";
+$mo-to-xl: "#{$xl-down} and #{$mo-up}";
+
+$xs-to-sm: "#{$sm-down} and #{$xs-up}";
+$xs-to-md: "#{$md-down} and #{$xs-up}";
+$xs-to-lg: "#{$lg-down} and #{$xs-up}";
+$xs-to-xl: "#{$xl-down} and #{$xs-up}";
+
+$sm-to-md: "#{$md-down} and #{$sm-up}";
+$sm-to-lg: "#{$lg-down} and #{$sm-up}";
+$sm-to-xl: "#{$xl-down} and #{$sm-up}";
+
+$md-to-lg: "#{$lg-down} and #{$md-up}";
+$md-to-xl: "#{$xl-down} and #{$md-up}";
+
+$lg-to-xl: "#{$xl-down} and #{$lg-up}";
+
+// use
+//@media #{$xs-up} { ... }
