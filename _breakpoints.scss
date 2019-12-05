@@ -46,4 +46,7 @@ $md-to-xl: "#{$xl-down} and #{$md-up}";
 $lg-to-xl: "#{$xl-down} and #{$lg-up}";
 
 // use
-//@media #{$xs-up} { ... }
+// in your main.scss
+// `import "breakpoints";`
+// then in your main.scss
+//`@media #{$xs-up} { ... }`
